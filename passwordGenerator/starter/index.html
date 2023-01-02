@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+          <!-- To collect the data needed to generate a password, I will use a modal with a form containing the two inputs. The frst input asks for the length required for the password and the second input will ask which combination of character arrays to use in generating the password. -->
+
+
+
+
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+
+        <div class="card-footer">
+          <!-- The generate button will call the modal-->
+          <button id="generate" class="btn">Generate Password</button>
+
+        <section>
+          <!-- This section wil contain the HTML components of the modal.-->
+          <div id="dataCollectModal" class="modal">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <span class="close">
+                CANCEL &times;
+              </span>
+              <br>
+              <!-- Form HTML-->
+              <h3>You can chose the length of your password and the characters to include by completing this form.  </h3>
+
+              <!-- The form for the collection of data (length of password, which arrays to include)-->
+              <form action="">
+                <label for="length">Enter a number between 10 and 64 to determine the length of your new password.</label>
+                <br>
+                <!-- Password length-->
+                <input type="integer" id="length" name="integer" class="lengthInput">
+                <br> <br>
+
+                <!-- Choose arrays-->
+                <label for="array">Choose which set of characters to use.</label>
+                <br> <br>
+                
+            
+  <fieldset>
+    <legend>Please select your preferred contact method:</legend>
+    <div>
+      <input type="radio" id="contactChoice1" name="contact" value="email" />
+      <label for="contactChoice1">Email</label>
+
+      <input type="radio" id="contactChoice2" name="contact" value="phone" />
+      <label for="contactChoice2">Phone</label>
+
+      <input type="radio" id="contactChoice3" name="contact" value="mail" />
+      <label for="contactChoice3">Mail</label>
+            <input type="radio" id="contactChoice3" name="contact" value="mail" />
+      <label for="contactChoice3">Mail</label>
+            <input type="radio" id="contactChoice3" name="contact" value="mail" />
+      <label for="contactChoice3">Mail</label>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </fieldset>
+</form>
+
+                
+
+
+
+            </div>
+
+          </div>
+        </section>
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

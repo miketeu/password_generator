@@ -63,20 +63,21 @@
             
     <fieldset>
     <legend>Please select your preferred choice of character set:</legend>
-    <div>
-      <input type="radio" id="all" name="all" value="email" />
+    <form>
+      
+      <input type="radio" id="all" name="choice" value="email" />
       <label for="all">All (default)</label>
 
-      <input type="radio" id="special" name="special" value="phone" />
+      <input type="radio" id="special" name="choice" value="phone" />
       <label for="special">Special Character</label>
 
-      <input type="radio" id="numerical" name="numerical" value="mail" />
+      <input type="radio" id="numerical" name="choice" value="mail" />
       <label for="numerical">Numerical </label>
-            <input type="radio" id="lower" name="lower" value="mail" />
+            <input type="radio" id="lower" name="choice" value="mail" />
       <label for="contactChoice3">Lower Case</label>
-            <input type="radio" id="upper" name="upper" value="mail" />
+            <input type="radio" id="upper" name="choice" value="mail" />
       <label for="upper">Upper Case</label>
-    </div>
+    </form>
     <div>
       <button type="submit">Submit</button>
     </div>

@@ -95,6 +95,17 @@ var upperCasedCharacters = [
 
 function getPasswordOptions(lengthOfPassword, charSet) {
 
+
+
+// Read data from modal.
+
+
+
+// Concatanate selected arrays
+
+
+
+
 }
 
 //  * Present a series of prompts for password criteria
@@ -114,7 +125,7 @@ function getPasswordOptions(lengthOfPassword, charSet) {
 var modal = document.getElementById("dataCollectModal");
 
 // Get the button that opens the modal.
-var btn = document.getElementById("generate");
+var btn = document.getElementById("callModal");
 
 // Get the "close" span element.
 var span = document.getElementsByClassName("close")[0];
@@ -137,24 +148,34 @@ window.onclick = function(event) {
 };
 
 
-
-
-
-
-
 // End of modal js.
 //________________________
-// Function for getting a random element from an array
-function getRandom(arr) {
 
+//Get length data from modal
+
+var pwLen = parseInt(document.getElementById("#pwLength"));
+
+//return "pwLen",
+
+console.log(pwLen);
+
+
+
+
+// Function for getting a random element from an array
+function getRandom() {
+  let randomIndex = Math.floor(Math.random() * lowerCasedCharacters.length);
 }
 
 // Function to generate password with user input
 function generatePassword() {
-
+ for (let i = 0; i < 100; i++)
+ practicePassword += "j";
 }
+//return "hello world";
 
 // Get references to the #generate element
+
 var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input

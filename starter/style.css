@@ -155,7 +155,7 @@ button[disabled] {
 }
   /* Modal content*/
   .modal-content {
-    background-color: #fefefe;
+    background-color: aliceblue;
     margin: auto;
     padding: 20px;
     width: 80%;
@@ -163,11 +163,13 @@ button[disabled] {
 
   /* The close / cancel button*/
   .close {
-    color: #f61313;
-
-    float: right;
+    color: yellow;
+    background-color:#f61313;
+    float: center;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 20px;
+    margin-top: 20px;
   }
 
   .close:hover,
@@ -176,11 +178,19 @@ button[disabled] {
     text-decoration: none;
     cursor: pointer;
   }
-.lengthInput {
-  width: 40px;
-}
+
+  /*Adjust size of 'length' input field.*/
+  .lengthInput {
+    width: 45px;
+  }
   
-
-
+/* The view buton takes user to new password page*/
+.generate {
+background-color: blue;
+color: aliceblue;
+border-radius: 20px;
+padding: 10px;
+margin-top: 30px;
+}
 
 /*--End of Modal css */

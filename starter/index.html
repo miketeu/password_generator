@@ -32,16 +32,14 @@
 
         <div class="card-footer">
           <!-- The generate button will call the modal-->
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="callModal" class="btn">Generate Password</button>
 
         <section>
           <!-- This section wil contain the HTML components of the modal.-->
           <div id="dataCollectModal" class="modal">
             <!-- Modal content-->
             <div class="modal-content">
-              <span class="close">
-                CANCEL &times;
-              </span>
+
               <br>
               <!-- Form HTML-->
               <h3>You can chose the length of your password and the characters to include by completing this form.  </h3>
@@ -53,7 +51,7 @@
                 <label for="length">Enter a number between 10 and 64 to determine the length of your new password.</label>
                 <br>
                 <!-- Password length-->
-                <input type="integer" id="length" name="integer" class="lengthInput">
+                <input type="number" id="pwLength" name="pwLength" class="lengthInput"  min=10 max=64>
                 <br> <br>
                 </fieldset>
                 <!-- Choose arrays-->
@@ -65,27 +63,39 @@
     <legend>Please select your preferred choice of character set:</legend>
     <form>
       
-      <input type="radio" id="all" name="choice" value="email" />
-      <label for="all">All (default)</label>
+      <input type="radio" id="all" name="choice" value="all" />
+      <label for="all">All (default Select from all of the data sets.)</label>
+      <br>
 
-      <input type="radio" id="special" name="choice" value="phone" />
+      <input type="radio" id="special" name="choice" value="" />
+
       <label for="special">Special Character</label>
+      <br>
 
-      <input type="radio" id="numerical" name="choice" value="mail" />
+      <input type="radio" id="numerical" name="choice" value="" />
       <label for="numerical">Numerical </label>
-            <input type="radio" id="lower" name="choice" value="mail" />
-      <label for="contactChoice3">Lower Case</label>
-            <input type="radio" id="upper" name="choice" value="mail" />
+      <br>
+
+      <input type="radio" id="lower" name="choice" value="" />
+      <label for="">Lower Case</label>
+      <br>
+
+       <input type="radio" id="upper" name="choice" value="mail" />
       <label for="upper">Upper Case</label>
+
     </form>
-    <div>
-      <button type="submit">Submit</button>
-    </div>
+    <button id="viewButton"  class="generate">
+      Click here to see your new password.
+    </button>
   </fieldset>
 </form>
+    
 
-                
-
+    <button class="close">
+      <span>
+         CANCEL &times;
+      </span>
+      </button>
 
 
             </div>

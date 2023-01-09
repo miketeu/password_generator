@@ -16,10 +16,6 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
           <!-- To collect the data needed to generate a password, I will use a modal with a form containing the two inputs. The frst input asks for the length required for the password and the second input will ask which combination of character arrays to use in generating the password. -->
-
-
-
-
         </div>
         <div class="card-body">
           <textarea
@@ -34,75 +30,93 @@
           <!-- The generate button will call the modal-->
           <button id="callModal" class="btn">Generate Password</button>
 
-        <section>
-          <!-- This section wil contain the HTML components of the modal.-->
-          <div id="dataCollectModal" class="modal">
-            <!-- Modal content-->
-            <div class="modal-content">
+          <section>
+            <!-- This section wil contain the HTML components of the modal.-->
+            <div id="dataCollectModal" class="modal">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <br />
+                <!-- Form HTML-->
+                <h3>
+                  You can chose the length of your password and the characters
+                  to include by completing this form.
+                </h3>
 
-              <br>
-              <!-- Form HTML-->
-              <h3>You can chose the length of your password and the characters to include by completing this form.  </h3>
+                <!-- The form for the collection of data (length of password, which arrays to include)-->
+                <form action="">
+                  <fieldset>
+                    <legend>Password length.</legend>
+                    <label for="length"
+                      >Enter a number between 10 and 64 to determine the length
+                      of your new password.</label
+                    >
+                    <br />
+                    <!-- Password length-->
+                    <input
+                      type="number"
+                      id="pwLength"
+                      name="pwLength"
+                      class="lengthInput"
+                      min="10"
+                      max="64"
+                    />
+                    <br />
+                    <br />
+                  </fieldset>
+                  <!-- Choose arrays-->
 
-              <!-- The form for the collection of data (length of password, which arrays to include)-->
-              <form action="">
-                <fieldset>
-                <legend>Password length.</legend>
-                <label for="length">Enter a number between 10 and 64 to determine the length of your new password.</label>
-                <br>
-                <!-- Password length-->
-                <input type="number" id="pwLength" name="pwLength" class="lengthInput"  min=10 max=64>
-                <br> <br>
-                </fieldset>
-                <!-- Choose arrays-->
-              
-                <br> <br>
-                
-            
-    <fieldset>
-    <legend>Please select your preferred choice of character set:</legend>
-    <form>
-      
-      <input type="radio" id="all" name="choice" value="all" />
-      <label for="all">All (default Select from all of the data sets.)</label>
-      <br>
+                  <br />
+                  <br />
 
-      <input type="radio" id="special" name="choice" value="" />
+                  <fieldset>
+                    <legend>
+                      Please select your preferred choice of character set:
+                    </legend>
+                    <form>
+                      <input type="radio" id="all" name="choice" value="all" />
+                      <label for="all"
+                        >All (default Select from all of the data sets.)</label
+                      >
+                      <br />
 
-      <label for="special">Special Character</label>
-      <br>
+                      <input type="radio" id="special" name="choice" value="" />
 
-      <input type="radio" id="numerical" name="choice" value="" />
-      <label for="numerical">Numerical </label>
-      <br>
+                      <label for="special">Special Character</label>
+                      <br />
 
-      <input type="radio" id="lower" name="choice" value="" />
-      <label for="">Lower Case</label>
-      <br>
+                      <input
+                        type="radio"
+                        id="numerical"
+                        name="choice"
+                        value=""
+                      />
+                      <label for="numerical">Numerical </label>
+                      <br />
 
-       <input type="radio" id="upper" name="choice" value="mail" />
-      <label for="upper">Upper Case</label>
+                      <input type="radio" id="lower" name="choice" value="" />
+                      <label for="">Lower Case</label>
+                      <br />
 
-    </form>
-    <button id="viewButton"  class="generate">
-      Click here to see your new password.
-    </button>
-  </fieldset>
-</form>
-    
+                      <input
+                        type="radio"
+                        id="upper"
+                        name="choice"
+                        value="mail"
+                      />
+                      <label for="upper">Upper Case</label>
+                    </form>
+                    <button id="viewButton" class="generate">
+                      Click here to see your new password.
+                    </button>
+                  </fieldset>
+                </form>
 
-    <button class="close">
-      <span>
-         CANCEL &times;
-      </span>
-      </button>
-
-
+                <button class="close">
+                  <span> CANCEL &times; </span>
+                </button>
+              </div>
             </div>
-
-          </div>
-        </section>
-
+          </section>
         </div>
       </div>
     </div>
